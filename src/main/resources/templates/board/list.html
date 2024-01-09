@@ -11,6 +11,7 @@
 
 
     <div class="container" layout:fragment="content">
+
         <table class="table table-bordered">
             <thead>
             <tr>
@@ -30,8 +31,12 @@
             </tbody>
         </table>
 
+        <div class="d-flex justify-content-end ms-auto">
+            <a class="btn btn-outline-primary"  href="/board/write">글쓰기</a>
+        </div>
+
         <div th:if="${!boardList.isEmpty()}">
-            <ul class="pagination"
+            <ul class="pagination justify-content-center"
                 th:with="
             pageNumber = ${boardList.pageable.pageNumber},
             pageSize = ${boardList.pageable.pageSize},
@@ -41,22 +46,24 @@
             endPage = (${tempEndPage < totalPages ? tempEndPage : totalPages})">
 
                 <li th:classappend="${boardList.first} ? 'disabled'" class="page-item">
-                    <a class="page-link" th:href="${boardList.first} ? '#' : @{/(page=${pageNumber - 1})}">
+                    <a class="page-link" th:href="${boardList.first} ? '#' : @{/board/list(page=${pageNumber - 1})}">
                         <span aria-hidden="true">&lt;</span>
                     </a>
                 </li>
 
                 <li th:each="page: ${#numbers.sequence(startPage, endPage)}" th:classappend="${page == pageNumber + 1} ? 'active'" class="page-item">
-                    <a th:text="${page}" class="page-link" th:href="@{/(page=${page - 1})}"></a>
+                    <a th:text="${page}" class="page-link" th:href="@{/board/list(page=${page - 1})}"></a>
                 </li>
 
                 <li th:classappend="${boardList.last} ? 'disabled'" class="page-item">
-                    <a class="page-link" th:href="${boardList.last} ? '#' : @{/(page=${pageNumber + 1})}" aria-label="Next">
+                    <a class="page-link" th:href="${boardList.last} ? '#' : @{/board/list(page=${pageNumber + 1})}" aria-label="Next">
                         <span aria-hidden="true">&gt;</span>
                     </a>
                 </li>
+
             </ul>
         </div>
+
 </div>
 
 </body>
