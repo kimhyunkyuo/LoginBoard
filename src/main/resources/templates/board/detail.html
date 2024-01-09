@@ -29,22 +29,22 @@
 
 <body>
 <div  class="container" layout:fragment="content">
-  <h1 class="mt-4">Board</h1>
+  <h1 class="mt-4">게시판</h1>
   <div class="card mb-4">
     <div class="card-body">
       <form>
         <div class="mb-3">
-          <label for="title" class="form-label">title</label>
+          <label for="title" class="form-label">제목</label>
           <input type="text" class="form-control" id="title" name="title" th:value="${dto.title}" disabled>
         </div>
 
         <div class="mb-3">
-          <label for="content" class="form-label">content</label>
+          <label for="content" class="form-label">내용</label>
           <textarea class="form-control" id="content" name="content" disabled>[[${dto.content}]]</textarea>
         </div>
 
         <div class="mb-3" th:if="${dto.imageUrls != null}">
-          <label class="form-label">Images</label>
+          <label class="form-label">이미지</label>
           <div>
             <th:block th:each="imageUrl : ${dto.imageUrls}">
               <img th:src="${imageUrl}" alt="Image" width="200px" height="200px">
@@ -64,7 +64,7 @@
                 th:value="${dto.userName}" disabled>
         </div>
 
-        <a href="/" class="btn btn-outline-secondary">list</a>
+        <a href="/board/list" class="btn btn-outline-secondary">리스트</a>
         <th:block th:if="${dto.getLoginId() == #authentication.principal.username}">
           <a th:href="@{/board/{id}/update(id=${id})}" class="btn btn-outline-warning">수정</a>
           <a th:href="@{/board/{id}/remove(id=${id})}" class="btn btn-outline-danger" onclick="return confirm('삭제하시겠습니까?')">삭제</a>
