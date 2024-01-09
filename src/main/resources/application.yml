@@ -1,0 +1,45 @@
+
+
+#서버 포트 설정
+server:
+  port: 8080
+# session 유효기간 설정 1800초 = 30분
+  servlet:
+    session:
+      timeout: 1800
+
+# mysql 연동 설정
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test_db?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: hyunkyukim
+    password: 1234
+
+# thymeleaf 새로고침 바로반영
+  thymeleaf:
+      cache: false
+
+# spring jpa 설정
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  
+  #oauth2설정
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 993245576031-8ta1opmm47nn2fa045sb23r5c4h0vgdn.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
+
+#파일 저장경로 설정
+file:
+      boardImagePath: C:/Temp/boardImageUpload/

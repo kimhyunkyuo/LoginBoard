@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
+<head>
+<body>
+<div layout:fragment="content">
+
+    <div class="container"> <br>
+        <h2>로그인 </h2>
+    <form th:method="post" th:action="|@{/login }|" th:object="${loginDTO}">
+        <div class="mb-3">
+            <label  class="form-label" th:for="loginId"> 아이디 </label>
+            <input  class="form-control" type="text" th:field="*{loginId}"/>
+        </div>
+        <br/>
+        <div  class="mb-3">
+            <label   class="form-label" th:for="userPassword">비밀번호 : </label>
+            <input   class="form-control" type="password" th:field="*{userPassword}"/>
+        </div>
+        <div th:if="${#fields.hasGlobalErrors()}">
+            <br/>
+            <div class="error-class" th:each="error : ${#fields.globalErrors()}" th:text="${error}" />
+        </div>
+        <br/>
+
+        <div th:if="${error}">
+            <p  class="alert alert-danger" id="valid" style="color: red; font-size:12px;"><a th:text="${exception}"></a></p>
+        </div>
+
+
+
+        <button  class="btn btn-outline-primary btn-sm" type="submit">로그인</button>
+
+
+        <button    class="btn btn-outline-primary btn-sm"  type="button" th:onclick="|location.href='@{/join}'|">회원 가입</button> <br/><br/>
+    </form>
+        <a href="/oauth2/authorization/google">구글 로그인</a>
+</div>
+
+
+
+</div>
+</body>
+</html>
+
+<style>
+    .error-class {
+        color: red;
+    }
+    .error-input {
+        border-color: red;
+    }
+</style>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>마이페이지</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="container">
+        <div class="col-md-8">
+        <div th:text="|로그인 ID : ${user.loginId}|"/>
+
+        <div th:text="|이름 : ${user.userName}|"/>
+        <div th:text="|유저정보 : ${user.role}|"/>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
