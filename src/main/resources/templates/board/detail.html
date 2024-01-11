@@ -17,7 +17,7 @@
     const commentElement = document.getElementById('comment-' + commentId);
     const commentContent = commentElement.textContent;
 
-    const newContent = prompt('Edit your comment:', commentContent);
+    const newContent = prompt('댓글을 다시 입력해주세요', commentContent);
     if (newContent) {
       $.post(`/board/${id}/comment/${commentId}/update`, {content: newContent}, function(data) {
         window.location.href = data;
@@ -73,21 +73,21 @@
 
       <!-- Comments Form -->
       <div class="card my-4">
-        <h5 class="card-header">Leave a Comment:</h5>
+        <h5 class="card-header">댓글 남기기</h5>
         <div class="card-body">
           <form th:action="@{/board/{id}/comment(id=${id})}" th:method="post">
             <div class="form-group" style="margin-bottom: 10px;">
               <input type="hidden" name="idx" th:value="*{idx}" />
               <textarea name="content" class="form-control" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">완료</button>
           </form>
         </div>
       </div>
 
       <!-- Display Comments -->
       <div class="card my-4" th:if="${comments.size()} != 0">
-        <h5 class="card-header">Comments:</h5>
+        <h5 class="card-header">댓글</h5>
         <div class="card-body">
           <div th:each="comment : ${comments}">
             <div class="media mb-4">
@@ -96,8 +96,8 @@
                 <p th:text="${comment.getContent()}" th:id="'comment-' + ${comment.getId()}">Comment content</p>
                 <small class="text-muted" th:text="${#temporals.format(comment.getCreatedTime(), 'yyyy-MM-dd HH:mm')}">Comment Date</small>
                 <div th:if="${comment.getLoginId() == #authentication.principal.username}">
-                  <button class="btn btn-sm btn-outline-warning" th:attr="data-id=${comment.getId()}" onclick="editComment(this)">Edit</button>
-                  <a th:href="@{/board/{id}/comment/{commentId}/remove(id=${id}, commentId=${comment.getId()})}" class="btn btn-sm btn-outline-danger" onclick="return confirm('Delete this comment?')">Delete</a>
+                  <button class="btn btn-sm btn-outline-warning" th:attr="data-id=${comment.getId()}" onclick="editComment(this)">다시쓰기</button>
+                  <a th:href="@{/board/{id}/comment/{commentId}/remove(id=${id}, commentId=${comment.getId()})}" class="btn btn-sm btn-outline-danger" onclick="return confirm('댓글을 정말 삭제하시겠습니까?')">삭제하기</a>
                 </div>
               </div>
             </div>
