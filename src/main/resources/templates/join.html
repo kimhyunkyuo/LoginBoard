@@ -25,25 +25,25 @@
             <h2>회원 가입</h2> <br/>
             <div class="mb-3">
                 <label th:for="loginId">아이디</label>
-                <input type="text" class="form-control" th:field="*{loginId}"th:errorclass="error-input"/>
+                <input type="text" class="form-control"  placeholder="아이디를 입력해주세요." th:field="*{loginId}"th:errorclass="error-input"/>
                 <div class="error-class" th:errors="*{loginId}"></div>
             </div>
 
             <div class="mb-3">
                 <label th:for="userPassword">비밀번호</label>
-                <input type="password"   class="form-control"  th:field="*{userPassword}" th:errorclass="error-input"/>
+                <input type="password"   class="form-control" placeholder="비밀번호를 입력해주세요." th:field="*{userPassword}" th:errorclass="error-input"/>
                 <div class="error-class" th:errors="*{userPassword}"></div>
             </div>
 
             <div class="mb-3">
                 <label th:for="userPassWordCheck">비밀번호 확인</label>
-                <input type="password" class="form-control" th:field="*{userPassWordCheck}" th:errorclass="error-input"/>
+                <input type="password" class="form-control"  placeholder="비밀번호 확인을입력해주세요." th:field="*{userPassWordCheck}" th:errorclass="error-input"/>
                 <div class="error-class" th:errors="*{userPassWordCheck}"></div>
             </div>
 
             <div class="mb-3">
                 <label th:for="userName">이름 </label>
-                <input type="text"  class="form-control" th:field="*{userName}" th:errorclass="error-input"/>
+                <input type="text"  class="form-control"  placeholder="이름을 입력해주세요." th:field="*{userName}" th:errorclass="error-input"/>
                 <div class="error-class" th:errors="*{userName}"></div>
             </div>
             <br/>
