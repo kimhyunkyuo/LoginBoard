@@ -20,6 +20,7 @@ public class UserService {
     private final BCryptPasswordEncoder encoder;
 
     public boolean checkLoginIdDuplicate(String loginId) {
+
         return userRepository.existsByLoginId(loginId);
     }
 
@@ -27,30 +28,6 @@ public class UserService {
         userRepository.save(req.toEntity(encoder.encode(req.getUserPassword())));
 
     }
-
-    public User login(LoginDTO req) {
-        Optional<User> optionalUserEntity = userRepository.findByLoginId(req.getLoginId());
-
-        if (optionalUserEntity.isEmpty()) {
-            return null;
-        }
-        User user = optionalUserEntity.get();
-
-        if (!user.getUserPassword().equals(req.getUserPassword())) {
-            return null;
-        }
-        return user;
-    }
-
-    public User getLoginUserById(Long userId) {
-        if (userId == null) return null;
-
-        Optional<User> optionalUser = userRepository.findById(userId);
-        if (optionalUser.isEmpty()) return null;
-
-        return optionalUser.get();
-    }
-
     public User getLoginUserByLoginId(String loginId) {
         if (loginId == null) return null;
 
