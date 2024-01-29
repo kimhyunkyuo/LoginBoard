@@ -36,6 +36,10 @@
 ## 실행화면
 <details>
 <summary>메인 실행화면</summary>
- ![스크린샷 2024-01-11 214959](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/6e583e10-2298-465f-9ce5-fffaf39745ec)
+
+ ![스크린샷 2024-01-11 214959](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/2bcadb1d-6284-4ee8-83c9-084886fccc44)
+
+ ![스크린샷 2024-01-30 011005](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/2005f15d-4ef4-4a09-9b06-3caa5ff7fec1)
+
 </details>
 
