@@ -5,7 +5,11 @@
 - 프로젝트 명 : LoginBoard
 - 개발기간 : 2023.01.03 ~ 2023.01.19
 - 개발인원 :  1명
-  
+- 주요기능
+   - Security회원가입 로그인
+   - Oauth2로그인(구글 소셜로그인 구현) 
+   - 게시판 - crud기능, 페이징 처리
+   - 댓글  - crud기능 
 ## 사용기술
 ### #Back-End
 #### core
@@ -29,4 +33,8 @@
 - DBeaver
 - Github
 ---
-## 주요기능 소개
+## 실행화면
+<details>
+<summary>Tips for collapsed sections</summary>
+</details>
+
