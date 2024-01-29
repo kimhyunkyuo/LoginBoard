@@ -27,3 +27,6 @@
 ## 개발환경
 - IntelliJ
 - DBeaver
+- Github
+---
+## 주요기능 소개
