@@ -35,6 +35,7 @@
 ---
 ## 실행화면
 <details>
-<summary>Tips for collapsed sections</summary>
+<summary>게시물 실행화면</summary>
+ 안녕
 </details>
 
