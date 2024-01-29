@@ -6,10 +6,10 @@
 - 개발기간 : 2023.01.03 ~ 2023.01.19
 - 개발인원 :  1명
 - 주요기능
-   - Security회원가입 로그인
-   - Oauth2로그인(구글 소셜로그인 구현) 
-   - 게시판 - crud기능, 페이징 처리
-   - 댓글  - crud기능 
+   - Security회원가입 및 로그인
+   - Oauth2로그인 (구글 소셜로그인 구현) 
+   - 게시판 - CRUD기능, 페이징 처리
+   - 댓글  - CRUD기능 
 ## 사용기술
 ### #Back-End
 #### core
@@ -35,7 +35,7 @@
 ---
 ## 실행화면
 <details>
-<summary>게시물 실행화면</summary>
- 안녕
+<summary>메인 실행화면</summary>
+ ![스크린샷 2024-01-11 214959](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/6e583e10-2298-465f-9ce5-fffaf39745ec)
 </details>
 
