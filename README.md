@@ -53,7 +53,9 @@
 
 ![스크린샷 2024-01-11 215235](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/31f7b692-c1f8-4beb-9ca8-7d9ab58fa8fa)
 ![스크린샷 2024-01-30 143332](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/e956e0f8-e5d4-40d6-bc77-a94936f0f658)
-###### 회원가입시 유효성 검사를 진행하여 회원가입을 진행함
+![image](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/4828d094-9c76-4f5c-8df6-96ed2b8c56a6)
+
+###### 회원가입시 유효성 검사를 진행하여 회원가입을 진행함(회원가입시 비밀번호는 암호화후 DB에 저장된다.)
 
 #### 2.로그인 화면
 ![스크린샷 2024-01-30 153509](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/8a0b394c-99fb-4054-b0d3-cbfdb2e6219e)
@@ -113,3 +115,27 @@
 ##### 댓글 삭제버튼 클릭시 삭제확인 여부를 확인하고 삭제를 진행한다.
 
 </details>
+
+## DB설계
+
+![스크린샷 2024-01-31 231517](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/8b6caf8a-c060-4871-ab83-1000415dbde5)
+
+### 1.USER_Table
+![image](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/36073e05-d275-4949-ab45-1832b8efe364)
+
+
+### 2.Board
+![image](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/475723c7-ddb9-4d15-8714-de67b2acedcf)
+
+
+### 3.Comment
+![image](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/2352f5e6-c63d-4d0c-9dc5-ce621cad57d6)
+
+
+### 4.board_image
+![image](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/c8078d79-5967-451e-a09f-065affde9615)
+
+
+
+
+
