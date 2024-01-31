@@ -41,7 +41,7 @@
 
  ![스크린샷 2024-01-11 214959](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/2bcadb1d-6284-4ee8-83c9-084886fccc44)
 
- #### 2.로그인 메인화면 (로그인 완료시 마이페이지와 로그아웃 버튼으로 변경됨)
+#### 2.로그인 메인화면 (로그인 완료시 마이페이지와 로그아웃 버튼으로 변경됨)
 ![스크린샷 2024-01-30 125809](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/f41c0c05-dc9d-4a56-9e4e-d3cf02ef667e)
 
 </details>
@@ -62,5 +62,54 @@
 
 #### 2-1 Oauth2 화면 (소셜로그인)
 ![스크린샷 2024-01-11 215421](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/4a129c0c-4271-441e-a163-3afc79c00e37)
+
+</details>
+
+
+<details>
+<summary>게시판 실행화면</summary>
+
+ #### 1.게시판 전체목록
+
+ ![스크린샷 2024-01-31 221715](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/af561905-b251-46e0-8360-88d56cf58f0d)
+##### 페이징 처리와 전체목록을 확인할 수 있다.
+ 
+#### 2.게시글 등록
+![스크린샷 2024-01-31 221039](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/0822cfa0-72a1-43a3-9463-a42fe186076c)
+##### 로그인한 사용자만 게시글을 작성할 수 있고 비로그인 사용자가 글쓰기 버튼을 클릭시 로그인 화면으로 넘어간다.
+
+#### 3.게시글 상세화면
+![스크린샷 2024-01-31 222320](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/df1c2cd2-0055-42f1-a268-58f80e8bb90e)
+##### 글을 작성한 사용자가 아닌 다른 사용자가 상세보기 접근시 리스트 버튼만 나타난다.
+
+![스크린샷 2024-01-31 222804](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/26414a78-9a53-4a5c-b901-76e8592f7d58)
+##### 글을 작성한 사용자와 일치할시 수정 삭제버튼이 나타난다.
+
+#### 4.게시글 수정화면
+![스크린샷 2024-01-31 223156](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/e2ed9151-1c6d-479f-a68a-81e5a03ad762)
+![스크린샷 2024-01-31 223218](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/6236d3de-fdbe-43f3-8cfc-159115d556b5)
+##### 글을 수정시 제목과 내용만 수정이 가능하고 수정버튼을 클릭시 수정된 게시판 상세보기화면으로 넘어간다. 
+
+#### 5.게시글 삭제화면
+![스크린샷 2024-01-31 223811](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/6e09a19e-012c-4ed6-80cb-122ff0e6d7ba)
+##### 삭제버튼을 클릭시 삭제확인 여부를 확인하고 삭제를 진행한다.
+</details>
+
+<details>
+<summary>댓글 실행화면</summary>
+
+#### 1.댓글 작성화면
+![image](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/19c36a03-6c84-4395-8af1-2bd9700aea41)
+![image](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/0dc9896b-2821-412c-972c-39049c8eb3fc)
+##### 댓글을 작성한 사용자만 수정,삭제 버튼이 나타난다.
+
+#### 2.댓글 수정화면
+![image](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/df33c7a5-9f56-430d-9063-0b69076d703e)
+![image](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/5c47c33b-4585-4ddb-a9f6-dd5f9237e312)
+##### 댓글 수정버튼 클릭시 수정할 수 있는 칸이 나타나고 수정을 진행한다.
+
+#### 3.댓글 삭제화면
+![image](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/8f01a3dc-8ba8-447b-8c3f-38e5b9d7f23b)
+##### 댓글 삭제버튼 클릭시 삭제확인 여부를 확인하고 삭제를 진행한다.
 
 </details>
