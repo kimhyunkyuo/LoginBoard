@@ -120,7 +120,7 @@
 
 ![스크린샷 2024-01-31 231517](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/8b6caf8a-c060-4871-ab83-1000415dbde5)
 
-### 1.USER_Table
+### 1.User_table
 ![image](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/36073e05-d275-4949-ab45-1832b8efe364)
 
 
@@ -132,7 +132,7 @@
 ![image](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/2352f5e6-c63d-4d0c-9dc5-ce621cad57d6)
 
 
-### 4.board_image
+### 4.Board_Image
 ![image](https://github.com/kimhyunkyuo/LoginBoard/assets/131740127/c8078d79-5967-451e-a09f-065affde9615)
 
 
